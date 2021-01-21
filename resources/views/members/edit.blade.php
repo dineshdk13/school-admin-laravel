@@ -61,6 +61,20 @@
                 <input type="text" name="phone" value="{{ $member->phone }}" class="form-control" placeholder="Phone NUmber">
             </div>
         </div>
+        <div>
+                            <input type="radio" id="in-category-male" name="gender" value="male" @if ($member->gender == "male") {
+                                                                                                       <?php echo "checked";?>
+                                                                                                    } @endif>
+                            <label for="male">Male</label>
+                            <input type="radio" id="in-category-female" name="gender" value="female" @if ($member->gender == "female") {
+                                                                                                       <?php echo "checked";?>
+                                                                                                    } @endif>
+                            <label for="female">Female</label>
+                            <input type="radio" id="in-category-other" name="gender" value="other" @if ($member->gender == "other") {
+                                                                                                       <?php echo "checked";?>
+                                                                                                    } @endif>
+                            <label for="other">Other</label>
+                        </div>
 
         <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">

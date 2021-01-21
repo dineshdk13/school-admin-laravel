@@ -23,8 +23,7 @@
             <th>No</th>
             <th>filename</th>
             <th>Username</th>
-            <th>First name</th>
-            <th>Last name</th>
+            <th>Name</th>
             <th>Email</th>
             <th>Gender</th>
             <th>Role</th>
@@ -36,8 +35,7 @@
             <td><img src="{{ Storage::url($member->filename) }}" height="40" alt="" /></td>
             <!-- <td><img src="{{ $member->filename }}" height="40"></td> -->
             <td>{{ $member->username }}</td>
-            <td>{{ $member->fname }}</td>
-            <td>{{ $member->lname }}</td>
+            <td>{{ $member->fname ." ". $member->lname }}</td>
             <td>{{ $member->email }}</td>
             <td>{{ $member->gender }}</td>
             <td>{{ $member->role }}</td>

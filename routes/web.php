@@ -18,5 +18,3 @@ use App\Http\Controllers\UploadImageController;
 //     return view('members.create');
 // });
 Route::resource('/members', MemberController::class);
-Route::get('/image-upload', [UploadImageController::class, 'index'])->name('image.upload.index');
-Route::post('/image-upload/store', [UploadImageController::class, 'store'])->name('image.upload.store');

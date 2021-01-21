@@ -80,21 +80,25 @@
         <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Role:</strong>
-                <input type="text" name="role" class="form-control" placeholder="Role">
-            </div>
-        </div>
-        <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
                 <strong>Email:</strong>
                 <input type="text" name="email" class="form-control" placeholder="Email">
             </div>
         </div>
+        <div class="dropdown">
+                            <select name="role" class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton pickone" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <option class="dropdown-item" disabled selected>-- Select Role --</option>
+                                   
+                                        <option  value="English teacher">English teacher</option>
+                                        <option  value="Tamil teacher">Tamil teacher</option>
+                                        <option  value="Maths teacher">Maths teacher</option>
+                            
+                            </select>
+                        </div>
         <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-            <label for="filename">File input</label>
+            <label for="filename"></label>
      <input type="file" id="filename" name="filename">
             </div>
         </div>

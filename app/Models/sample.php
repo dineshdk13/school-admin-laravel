@@ -9,8 +9,7 @@ class sample extends Model
 {
     use HasFactory;
     protected $table = 'sample';
-    // protected $primaryKey = 'id';
-    public $timestamps = false;
+    protected $primaryKey = "id";
     protected $fillable = [
         'filename','fname', 'lname', 'username','password', 'address', 'phone', 'gender', 'role', 'email'
     ];

@@ -15,7 +15,7 @@
     @yield('content')
 </div>
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Footer</p>
+<p>© 2021 DhineshDk</p>
 </div>
 </body>
 </html>
